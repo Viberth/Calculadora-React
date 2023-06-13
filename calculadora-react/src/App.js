@@ -18,9 +18,11 @@ function App() {
 
   const calcularResultado = () => {
 
+    if (input) {
     setinput(evaluate(input))
-
-  }
+    } else
+    alert('Porfavor ingrese un valor antes')
+  };
 
   return (
     <div className="App">
